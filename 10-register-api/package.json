@@ -1,0 +1,14 @@
+{
+  "name": "simpleschedule-step-10",
+  "version": "1.0.0",
+  "description": "Step 10: registration API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^6.20.0"
+  }
+}

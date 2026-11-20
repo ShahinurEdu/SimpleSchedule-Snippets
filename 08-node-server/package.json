@@ -1,0 +1,11 @@
+{
+  "name": "simpleschedule-step-08",
+  "version": "1.0.0",
+  "description": "Step 8: a web server with only Node.js built-in modules",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "simpleschedule-step-09",
+  "version": "1.0.0",
+  "description": "Step 9: connect to MongoDB",
+  "main": "test-connection.js",
+  "scripts": {
+    "start": "node test-connection.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^6.20.0"
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a meeting | SimpleSchedule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="booking-page">
+
+    <div class="brand">
+      <span class="logo">S</span>
+      <span>SimpleSchedule</span>
+    </div>
+
+    <section class="booking-card">
+
+      <!-- ===== Column 1: who you are meeting ===== -->
+      <div class="host-panel">
+        <div class="avatar">AS</div>
+        <p class="muted">Alex Smith</p>
+        <h2>30 Minute Meeting</h2>
+        <p class="muted">A short meeting to discuss your project, questions, and next steps.</p>
+        <ul class="meeting-facts">
+          <li>🕒 30 minutes</li>
+          <li>🎥 Online meeting</li>
+        </ul>
+      </div>
+
+      <!-- ===== Column 2: the calendar ===== -->
+      <div class="calendar-panel">
+        <h2>Select a date</h2>
+
+        <div class="month-row">
+          <button id="prev-month" aria-label="Previous month">‹</button>
+          <strong id="month-label">Month Year</strong>
+          <button id="next-month" aria-label="Next month">›</button>
+        </div>
+
+        <!-- The 7 day names never change, so we type them in HTML -->
+        <div class="weekday-row">
+          <span>SUN</span><span>MON</span><span>TUE</span><span>WED</span>
+          <span>THU</span><span>FRI</span><span>SAT</span>
+        </div>
+
+        <!-- EMPTY on purpose: JavaScript fills in the day buttons -->
+        <div class="days-grid" id="days-grid"></div>
+      </div>
+
+      <!-- ===== Column 3: times for the chosen day ===== -->
+      <div class="times-panel">
+        <h2>Available times</h2>
+        <p class="chosen-date" id="chosen-date">Pick a date to see available times.</p>
+        <div class="time-list" id="time-list"></div>
+        <p class="selected-summary" id="selected-summary"></p>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="calendar.js"></script>
+</body>
+</html>

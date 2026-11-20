@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | SimpleSchedule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= SIDEBAR (left side) ================= -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="logo">S</span>
+      <span>SimpleSchedule</span>
+    </div>
+
+    <!-- The menu. "active" marks the page we are on. -->
+    <nav>
+      <a class="nav-link active" href="#">🏠 Dashboard</a>
+      <a class="nav-link" href="#">📅 Appointments</a>
+      <a class="nav-link" href="#">🕒 Availability</a>
+      <a class="nav-link" href="#">⚙️ Settings</a>
+    </nav>
+
+    <!-- Who is signed in -->
+    <div class="sidebar-footer">
+      <div class="avatar">AS</div>
+      <div>
+        <p class="account-name">Alex Smith</p>
+        <p class="account-email">alex@example.com</p>
+      </div>
+      <a class="signout-button" href="index.html">Sign out</a>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT (right side) ================= -->
+  <main class="main">
+
+    <header class="topbar">
+      <div>
+        <h1>Good morning, Alex</h1>
+        <p>Here is your schedule for today.</p>
+      </div>
+      <button class="primary-btn">+ New appointment</button>
+    </header>
+
+    <!-- Three number boxes -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <p class="stat-label">Today</p>
+        <p class="stat-number">3</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">This week</p>
+        <p class="stat-number">8</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-label">Hours booked this week</p>
+        <p class="stat-number">4</p>
+      </div>
+    </section>
+
+    <!-- Today's appointments (typed by hand for now) -->
+    <section class="panel">
+      <div class="panel-heading">
+        <h2>Today's appointments</h2>
+        <a href="#">View all</a>
+      </div>
+
+      <div class="appointment-row">
+        <div class="avatar">JM</div>
+        <div class="appointment-info">
+          <p class="appointment-name">Jordan Miller</p>
+          <p class="appointment-meta">Project discussion · 30 min</p>
+        </div>
+        <span class="time-tag">10:00 AM</span>
+      </div>
+
+      <div class="appointment-row">
+        <div class="avatar">AK</div>
+        <div class="appointment-info">
+          <p class="appointment-name">Avery Kim</p>
+          <p class="appointment-meta">Quick meeting · 30 min</p>
+        </div>
+        <span class="time-tag">11:30 AM</span>
+      </div>
+
+      <div class="appointment-row">
+        <div class="avatar">RS</div>
+        <div class="appointment-info">
+          <p class="appointment-name">Riley Smith</p>
+          <p class="appointment-meta">Project discussion · 30 min</p>
+        </div>
+        <span class="time-tag">2:00 PM</span>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

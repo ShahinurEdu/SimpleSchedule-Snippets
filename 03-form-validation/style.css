@@ -1,0 +1,229 @@
+/* =========================================================
+   SimpleSchedule — CS 219
+   Colors come from the Figma prototype.
+   ========================================================= */
+
+/* ---------- 1. Color variables (change them in one place) ---------- */
+:root {
+  --blue: #2364e8;
+  --blue-dark: #1b4fc0;
+  --blue-light: #edf4ff;
+  --page-bg: #f6f8fb;
+  --border: #e5e9f0;
+  --text: #1e293b;
+  --muted: #64748b;
+  --red: #dc2626;
+  --green: #16a34a;
+}
+
+/* ---------- 2. Reset: remove browser default spacing ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+  line-height: 1.4;
+}
+
+a {
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- 3. Logo ("S" box + app name) ---------- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  background: var(--blue);
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* ---------- 4. Blue button ---------- */
+.primary-btn {
+  background: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: var(--blue-dark);
+}
+
+/* "wide" makes a button fill its box */
+.wide {
+  width: 100%;
+}
+
+/* ---------- 5. Small helpers used on several pages ---------- */
+
+/* Grey text */
+.muted {
+  color: var(--muted);
+}
+
+/* Round circle with initials, e.g. "AS" */
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--blue-light);
+  color: var(--blue);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   Sign in / Create account pages
+   ========================================================= */
+
+/* Center everything on the screen */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-page .brand {
+  margin-bottom: 20px;
+}
+
+/* The white box in the middle */
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Small blue text above the heading */
+.eyebrow {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.auth-card h1 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+/* Form: labels on top of inputs */
+.auth-form {
+  text-align: left;
+}
+
+.auth-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.auth-form input:focus {
+  outline: 3px solid var(--blue-light);
+  border-color: var(--blue);
+}
+
+/* "Password" on the left, "Forgot password?" on the right */
+.label-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-row a {
+  font-size: 13px;
+}
+
+.switch-text {
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+.demo-note {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* =========================================================
+   Error and success messages
+   ========================================================= */
+.error-message {
+  background: #fef2f2;
+  color: var(--red);
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.success-message {
+  background: #f0fdf4;
+  color: var(--green);
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* Add the class "hidden" to anything you want to hide */
+.hidden {
+  display: none;
+}
